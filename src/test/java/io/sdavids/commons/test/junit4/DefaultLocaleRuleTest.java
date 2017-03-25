@@ -40,9 +40,9 @@ public final class DefaultLocaleRuleTest {
 
   @Test
   public void useLocale() {
-    Locale france = FRANCE;
-
     assertThat(Locale.getDefault()).isEqualTo(forLanguageTag("tr"));
+
+    Locale france = FRANCE;
 
     locale.useLocale(france);
 
