@@ -121,7 +121,7 @@ public final class DefaultLocaleRule extends TestWatcher {
   /**
    * Creates a new rule for the specified locale.
    *
-   * @param locale the locale, not null
+   * @param locale the locale; not null
    * @return the rule
    * @since 1.0
    */
@@ -140,7 +140,7 @@ public final class DefaultLocaleRule extends TestWatcher {
   /**
    * Sets the test method's locale to the specified one.
    *
-   * @param locale the locale, not null
+   * @param locale the locale; not null
    * @since 1.0
    */
   public void useLocale(Locale locale) {

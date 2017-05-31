@@ -75,7 +75,7 @@ public final class DefaultTimeZoneRule extends TestWatcher {
   /**
    * Creates a new rule for the specified time zone.
    *
-   * @param timeZone the time zone, not null
+   * @param timeZone the time zone; not null
    * @return the rule
    * @since 1.0
    */
@@ -94,7 +94,7 @@ public final class DefaultTimeZoneRule extends TestWatcher {
   /**
    * Sets the test method's time zone to the specified one.
    *
-   * @param timeZone the time zone, not null
+   * @param timeZone the time zone; not null
    * @since 1.0
    */
   public void useTimeZone(TimeZone timeZone) {
