@@ -52,7 +52,7 @@ ext {
   // https://bintray.com/bintray/jcenter
   errorproneVersion = '2.0.19'
   jsr305Version = '3.0.2'
-  guavaVersion = '21.0'
+  guavaVersion = '22.0'
   junitVersion = '4.12'
   hamcrestVersion = '1.3'
   assertjVersion = '3.8.0'
