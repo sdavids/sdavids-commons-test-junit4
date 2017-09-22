@@ -205,6 +205,16 @@ spotless {
   }
 }
 
+test {
+  systemProperty 'user.timezone', System.properties['user.timezone']
+
+  maxParallelForks = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
+
+  testLogging {
+    exceptionFormat = 'full'
+  }
+}
+
 idea {
   module {
     downloadJavadoc = true
@@ -224,10 +234,6 @@ task versionOnly {
   doLast {
     println version
   }
-}
-
-tasks.withType(Test) { task ->
-  task.testLogging.exceptionFormat = 'full'
 }
 
 if (project.hasProperty('release')) {
