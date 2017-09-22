@@ -91,7 +91,11 @@ dependencies {
   errorprone("com.google.errorprone:error_prone_core:${errorproneVersion}")
 
   compileOnly("com.google.code.findbugs:jsr305:${jsr305Version}")
-  compileOnly("com.google.guava:guava:${guavaVersion}")
+  compileOnly("com.google.guava:guava:${guavaVersion}"){
+    exclude group: 'com.google.code.findbugs', module: 'jsr305'
+    exclude group: 'com.google.j2objc', module: 'j2objc-annotations'
+    exclude group: 'org.codehaus.mojo', module: 'animal-sniffer-annotations'
+  }
 
   api("junit:junit:${junitVersion}") {
     exclude group: 'org.hamcrest', module: 'hamcrest-core'
